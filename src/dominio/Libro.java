@@ -12,7 +12,7 @@ public class Libro {
     private final int anioPublicacion;
     private Socio prestadoA;
 
-    public Libro(String id, String titulo, String autor, int anioPublicacion) {
+    Libro(String id, String titulo, String autor, int anioPublicacion) {
         if (id == null || id.isBlank()) {
             throw new IdInvalidoException("libro");
         }
